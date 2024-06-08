@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css">
+    
+</head>
+<body>
+   
+    <div class="navbar">
+        <img class="logo" src="indexlogo1.png">
+        <h3>अपना Weather</h3>
+        <ul class="navbar nav">
+           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+           <li class="nav-item"><a href="weather.html" class="nav-link">Weather</a></li>
+           <li class="nav-item"><a href="information.html" class="nav-link">Information</a></li>
+          
+           
+        </ul>
+      </div>
+    <div class="container" style="margin-bottom: 100px;">
+        <div class="search">
+            <input type="text" id="Searchip"  placeholder="Enter City Name:" spellcheck="false">
+            <button id="Searchbtn"><img src="search.png"></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <br>
+        <div class="weather">
+            <img src="rain.png" class="weather-icon"><br><br>
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Pune</h2>
+            <br>
+            <div class="details">
+                <div class="col" >
+                    <img src="humidity.png" >
+                    <div>
+                       <p class="humidity">50%</p>
+                       <p style="line-height: 0.5px;"><b>Humidity</b></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="wind.png" >
+                    <div>
+                       <p class="wind">15km/h</p>
+                       <p style="line-height: 0.5px;"  ><b>Wind Speed</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="weather.js">
+     
+    </script>
+
+
+</body>
+</html>
